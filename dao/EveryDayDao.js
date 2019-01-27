@@ -3,7 +3,6 @@ let dbutil = require("./DBUtil.js");
 function insertEveryDay(content, ctime, success) {
   let insertSql = "insert into every_day(`content`, `ctime`) values (?, ?)";
   let params = [content, ctime];
-
   let connection = dbutil.createConnection();
   connection.query(insertSql, params, function (error, result) {
     if (error == null) {

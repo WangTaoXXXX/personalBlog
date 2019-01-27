@@ -2,12 +2,12 @@ let mySql = require('mysql');
 
 function createConnection () {
   let connection = mySql.createConnection({
-    host: '127.0.0.1',
+    host: '47.105.184.128',
     port: '3306',
     user: 'root',
-    password: 'zmg19970401',
+    password: '123456',
     database: 'my_blog'
-  })
+  });
 
   return connection;
 }
